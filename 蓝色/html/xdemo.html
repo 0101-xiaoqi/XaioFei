@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>樱花飘落动画</title>
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/snowfall.jquery.js"></script>
+		<style>
+			body {
+			  font-size: 16px;
+			  font-family: 'Helvetica', 'Arial', sans-serif;
+			  text-align: center;
+			  background-color: #f8faff;
+			}
+			
+   button {
+        width: 200px;
+        padding:8px;
+        background-color: blueviolet;
+        color: aliceblue;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px; /* future proofing */
+        -khtml-border-radius: 10px; /* for old Konqueror browsers */
+        text-align: center;
+        vertical-align: middle;
+        border: 1px solid transparent;
+        font-weight: 900;
+        font-size:125%  }
+		
+			.snowfall-flakes{animation:sakura 5s linear 5s infinite;}
+			@keyframes sakura{
+				0% {transform:rotate3d(0, 0, 0, 0deg);}
+				25%{transform:rotate3d(1, 1, 0, 60deg);}
+				50%{transform:rotate3d(1, 1, 0, 0deg);}
+				75%{transform:rotate3d(1, 0, 0, 60deg);}
+				100% {transform:rotate3d(1, 0, 0, 0deg);}
+			}
+			
+			.mobile {
+			  position: fixed;
+			  text-align: center;
+			  width: 100%;
+			  top: 50px;
+			  font-size: 90px;
+			  display: block;
+			}
+			
+			h1, h2, span {
+			  display: none;
+			}
+			
+			@media screen and (min-width: 670px) {
+			  .mobile {
+			    display: none;
+			  }
+			
+			  h1, h2, span {
+			    display: block;
+			  }
+			body {
+			  background: linear-gradient(to right, #e2b8f7, #d4bafa, #c7bcfb, #b9befb, #acbff9);
+			}
+		</style>
+	</head>
+	<body class="darkBg">
+		<script type='text/javascript'>
+		$(document).ready(function(){
+			$(document).snowfall({image:"../img/one.png", flakeCount:20, minSpeed:1, minSize:20, maxSize:25,});
+            $(document).snowfall({image:"../img/9527.png", flakeCount:20, minSpeed:1, minSize:8, maxSize:45,});
+            $(document).snowfall({image:"../img/one.png", flakeCount:20, minSpeed:1, minSize:8, maxSize:15,});
+            $(document).snowfall({image:"../img/one.png", flakeCount:20, minSpeed:1, minSize:8, maxSize:15,});
+		});
+		</script>
+		<audio autoplay="autoplay" loop="loop" preload="auto"
+		
+		            	src="../voice/环游星空.mp3"></audio>
+		    <a href="#" onclick="delayURL('../SecondLucky/LuckyEvertime.html',1500)">
+			
+		        <body>
+		        <button onclick="window.open('Memories.html')">
+		            go forward φ(≧ω≦*)♪
+		        </button>
+		        </body>
+		
+		
+		<h1>有人说，人的一生会遇到2920万人，而两个人相爱的概率只有0.000049</h1>
+		<h2>在这茫茫人海中，两个人能相遇就值得感激，能相识更是一种难得</h2>
+		<h3>所以，遇见你是最美丽的意外</h3>
+		<span>小王同志，祝你生日快乐</span>
+	</body>
+</html>
